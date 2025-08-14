@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Looping</title>
+</head>
+
+<body>
+    <h1>Berlatih Looping</h1>
+    <h3>Contoh Hasil Looping</h3>
+    <div id="example">
+
+    </div>
+    <h3>Soal No.1</h3>
+    <div id="jawaban1">
+
+    </div>
+
+    <h3>Soal No.2</h3>
+    <div id="jawaban2">
+
+    </div>
+
+    <script>
+
+        var jawabanContoh = ""
+        for (var i = 0; i < 5; i++) {
+            jawabanContoh += "ini adalah angka ke: " + [i] + "<br>"
+        }
+        document.getElementById("example").innerHTML = jawabanContoh
+
+        var i = 2;
+        var loop1 = "";
+        while (i <= 20) {
+            loop1 += i + " - I love coding<br>";
+            i = i + 2;
+        }
+        var jawaban1 = "<h4>Looping 1</h4>" + loop1
+        document.getElementById("jawaban1").innerHTML = jawaban1
+
+        var j = 20;
+        var loop2 = "";
+        while (j >= 2) {
+            loop2 += j + " - I will become web developer<br>";
+            j = j - 2;
+        }
+        var jawaban2 = "<h4>Looping 2</h4>" + loop2
+        document.getElementById("jawaban2").innerHTML = jawaban2
+
+    </script>
+
+</body>
+
+</html>
